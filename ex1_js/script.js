@@ -28,12 +28,31 @@ O resultado final desse desafio deve ser algo em torno de:
 
 */
 
+
 let numberOne = prompt(`insira aqui o primeiro numero`)
 let numberTwo = prompt(`insira aqui o segundo numero`)
 
-let soma = alert(`a soma dos dois numeros é: ${Number(numberOne) + Number(numberTwo)}`)
-let Sub = alert(`a subtração dos dois numeros é: ${Number(numberOne) - Number(numberTwo)}`)
-let mult = alert(`a multiplicação dos dois numeros é: ${Number(numberOne) * Number(numberTwo)}`)
-let div = alert(`a divisão dos dois numeros é: ${Number(numberOne) / Number(numberTwo)}`)
-let rest = alert(`a resto dos dois numeros é: ${Number(numberOne) % Number(numberTwo)}`)
+let CheckEquals = numberOne === numberTwo ? 'são iguais' : 'são diferentes'
+
+numberOne = Number(numberOne)
+numberTwo = Number(numberTwo)
+
+
+const sum = (numberOne + numberTwo)
+
+let parOuImpar = sum % 2 == 0 ? 'par' : 'ímpar'
+
+const sub = numberOne - numberTwo
+const mult = numberOne * numberTwo
+const div = numberOne / numberTwo
+const restoDiv = numberOne % numberTwo
+
+alert(`os numeros ${CheckEquals}`)
+alert(`a noma dos dois números é ${sum}`)
+alert(`a soma dos números é ${parOuImpar}`)
+alert(`a subtração dos dois números é ${sub}`)
+alert(`a multiplicação dos dois números é ${mult}`)
+alert(`a divisão dos dois números é ${div}`)
+alert(`o resto da divisão dos dois numeros é ${restoDiv}`)
+
 
